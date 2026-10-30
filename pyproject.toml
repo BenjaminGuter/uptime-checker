@@ -1,0 +1,22 @@
+[project]
+name = "uptime-checker"
+version = "0.1.0"
+description = "FastAPI service that periodically checks URLs and exposes uptime and latency as Prometheus metrics"
+readme = "README.md"
+authors = [
+    { name = "BenjaminGuter" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "fastapi>=0.162.0",
+]
+
+[build-system]
+requires = ["uv_build>=0.13.6,<0.14.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.2.0",
+    "ruff>=0.17.3",
+]
